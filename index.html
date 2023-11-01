@@ -266,7 +266,11 @@
         <div class="bottom-bar"></div>
 
         <div class="contact-box">
-          <form class="contact-form" method="post">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xnqkrnba"
+            method="post"
+          >
             <fieldset>
               <div class="contact-row">
                 <div class="contact-input-1" data-id="full-name">
@@ -285,7 +289,7 @@
                     id="email"
                     placeholder="Enter your email"
                     type="email"
-                    name="_replyto"
+                    name="reply to"
                     required="required"
                   />
                 </div>
@@ -302,12 +306,7 @@
                   ></textarea>
                 </div>
               </div>
-              <button
-                class="send-button"
-                type="submit"
-                id="send-button"
-                onclick="sendMail()"
-              >
+              <button class="send-button" type="submit" id="send-button">
                 Send
                 <svg
                   width="72"
