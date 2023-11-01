@@ -858,7 +858,7 @@ label {
   }
 
   .one {
-    grid-template-columns: 1rem 1fr 1fr 1rem;
+    grid-template-columns: 1rem 1fr 1fr 1fr 1rem;
     grid-template-rows: 20rem 1fr 5fr 1fr 5rem;
     background-size: cover;
     height: 100vh;
