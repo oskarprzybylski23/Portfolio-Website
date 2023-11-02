@@ -1,3 +1,4 @@
+// ---- NAVIGATION BAR BEHAVIOUR ----
 // Script to change navigation bar colours based on page section
 document.addEventListener("DOMContentLoaded", function () {
   // Get all the navigation links
@@ -78,3 +79,62 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// ---- GENERATING CARDS -----
+// Sample data for the cards
+const cardData = [
+  {
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    link: "https://oskarprzybylski23.github.io/Hobby-Page/",
+    imageSrc: "Assets/hobbyPage.PNG",
+    heading: "Hobby Page",
+  },
+  {
+    content:
+      "Quake Finder is a web app designed to empower users to explore historical earthquake data from around the world. With Quake Finder, users can delve into seismic events and understand their impact.",
+    link: "https://fac29a.github.io/Oskar-Zukhra-Project/",
+    imageSrc: "assets/QuakeFinder.PNG",
+    heading: "Quake Finder",
+  },
+  {
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    link: "https://www.freecodecamp.org/",
+    imageSrc: "Assets/freeCodeCamp.png",
+    heading: "FreeCodeCamp",
+  },
+  {
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    link: "https://oskarprzybylski23.github.io/Hiking-Game/",
+    imageSrc: "Assets/hikingGame.PNG",
+    heading: "Hiking Game",
+  },
+];
+
+// Get the template element and the container
+const cardTemplate = document.getElementById("card-template");
+const cardContainer = document.getElementById("four-content-container");
+
+// Function to create and append cards to the container
+function createCard(card) {
+  const cardClone = document.importNode(cardTemplate.content, true);
+  const cardContent = cardClone.querySelector(".card-content");
+  const cardLink = cardClone.querySelector(".page-link");
+  const cardImage = cardClone.querySelector(".card-image img");
+  const cardHeading = cardClone.querySelector(".card-heading h3");
+
+  // Set card data
+  cardContent.querySelector("p").textContent = card.content;
+  cardLink.href = card.link;
+  cardImage.src = card.imageSrc;
+  cardImage.alt = card.heading;
+  cardHeading.textContent = card.heading;
+
+  // Append the cloned card to the container
+  cardContainer.appendChild(cardClone);
+}
+
+// Loop through the card data and create cards
+cardData.forEach(createCard);
