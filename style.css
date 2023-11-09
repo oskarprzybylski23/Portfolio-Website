@@ -445,41 +445,6 @@ ul {
   min-height: 400px;
 }
 
-.git-chart-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.git-image {
-  margin-top: 20px;
-}
-
-#github-lang {
-  width: 30%;
-}
-
-#github-calendar {
-  width: 80%;
-  padding: 20px;
-   border: 1px solid lightgrey;
-   border-radius: 5px;
-}
-
-
-.skills-list {
-  list-style-type: none;
-  list-style: disc;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-  gap: 1rem;
-  font-size: 1.2rem;
-}
-
 /* SECTION THREE */
 
 #three-content-container {
@@ -514,11 +479,48 @@ ul {
 }
 
 .box-2 {
+  display: flex;
+  justify-content: space-between;
   align-self: flex-end;
+  width: 80%;
 }
 
-.content-text p:last-of-type {
-  margin-bottom: 0px;
+.skills {
+  width: 60%;
+}
+
+.git-chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.git-image {
+  margin-top: 20px;
+}
+
+#github-lang {
+  width: 40%;
+}
+
+#github-calendar {
+  width: 80%;
+  padding: 20px;
+   border: 1px solid lightgrey;
+   border-radius: 5px;
+}
+
+.skills-list {
+  list-style-type: none;
+  list-style: disc;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two columns layout */
+  gap: 1rem;
+  font-size: 1.2rem;
 }
 
 /* SECTION FOUR */
