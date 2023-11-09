@@ -12,6 +12,8 @@
   --accent-bright: #ffffff;
   --accent-dark: #212427;
   --accent-mid: #233638;
+
+  --font-main: 'Josefin Sans', sans-serif;
 }
 
 body,
@@ -133,7 +135,7 @@ abbr {
 }
 
 .page-link {
-  font-family: Josefin Sans;
+  font-family: var(--font-main);
   font-size: 2rem;
   text-decoration: none;
   color: var(--font-dark);
@@ -158,7 +160,7 @@ abbr {
 }
 
 h1 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-main);
   font-size: 4rem;
   font-weight: bold;
   color: var(--font-bright);
@@ -169,7 +171,7 @@ header h1 {
 }
 
 h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-main);
   font-size: 3rem;
   font-weight: bold;
   color: var(--font-dark);
@@ -177,7 +179,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-main);
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
@@ -185,7 +187,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-main);
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 0.5rem;
@@ -194,11 +196,15 @@ h4 {
 }
 
 p {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-main);
   font-size: 1rem;
   line-height: 1.3rem;
   text-align: justify;
   color: var(--font-dark);
+}
+
+ul {
+  font-family: var(--font-main);
 }
 
 #header-half {
@@ -219,7 +225,7 @@ p {
   margin-left: 5rem;
   display: flex;
   justify-content: flex-start;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-main);
   min-width: 100px;
 }
 
@@ -464,14 +470,12 @@ p {
 
 .skills-list {
   list-style-type: none;
-  padding: 0;
+  list-style: disc;
+  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-  gap: 10px;
-  font-size: 18px;
-}
-
-.skills-list li {
+  gap: 1rem;
+  font-size: 1.2rem;
 }
 
 /* SECTION THREE */
@@ -698,7 +702,7 @@ fieldset {
   align-items: stretch;
   position: relative;
   width: 100%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-main);
 }
 
 .contact-row:first-of-type {
