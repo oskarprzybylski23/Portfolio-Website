@@ -81,35 +81,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ---- GENERATING CARDS -----
-// Sample data for the cards
+// data for the cards
 const cardData = [
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    link: "https://oskarprzybylski23.github.io/Hobby-Page/",
-    imageSrc: "Assets/hobbyPage.PNG",
-    heading: "Hobby Page",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    link: 'https://oskarprzybylski23.github.io/Hiking-Game/',
+    imageSrc: 'assets/hikingGame.PNG',
+    heading: 'Hiking Game',
   },
   {
     content:
-      "Quake Finder is a web app designed to empower users to explore historical earthquake data from around the world. With Quake Finder, users can delve into seismic events and understand their impact.",
-    link: "https://fac29a.github.io/Oskar-Zukhra-Project/",
-    imageSrc: "assets/QuakeFinder.PNG",
-    heading: "Quake Finder",
+      'Quake Finder is a web app designed to empower users to explore historical earthquake data from around the world. With Quake Finder, users can delve into seismic events and understand their impact.',
+    link: 'https://fac29a.github.io/Oskar-Zukhra-Project/',
+    imageSrc: 'assets/QuakeFinder.PNG',
+    heading: 'Quake Finder',
   },
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    link: "https://www.freecodecamp.org/",
-    imageSrc: "Assets/freeCodeCamp.png",
-    heading: "FreeCodeCamp",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    link: 'https://www.freecodecamp.org/',
+    imageSrc: 'assets/taskManager.png',
+    heading: 'Task Manager',
   },
   {
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    link: "https://oskarprzybylski23.github.io/Hiking-Game/",
-    imageSrc: "Assets/hikingGame.PNG",
-    heading: "Hiking Game",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    link: 'https://oskarprzybylski23.github.io/Hiking-Game/',
+    imageSrc: 'assets/hikingGame.PNG',
+    heading: 'Hiking Game',
   },
 ];
 
