@@ -190,9 +190,9 @@ h4 {
   font-family: var(--font-main);
   font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
   color: var(--secondary-background);
-  opacity: 70%;
 }
 
 p {
@@ -1007,7 +1007,7 @@ label {
   }
 
   #one-heading-container {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     grid-row: 3;
   }
 
@@ -1017,7 +1017,7 @@ label {
   }
 
   #one-bottom-bar {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     grid-row: 4 / span 2;
     display: flex;
     justify-content: start;
@@ -1026,13 +1026,17 @@ label {
   }
 
   #bottom-bar-content {
-    grid-column: 2 / span 2;
+    grid-column: 2 / span 3;
     grid-row: 4 / span 2;
   }
 
   #one-content-container {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     grid-row: 3;
+  }
+
+  .transparent-button {
+    display: none;
   }
 
   /* section two */
