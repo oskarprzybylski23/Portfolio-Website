@@ -93,28 +93,28 @@ skipButton.addEventListener('click', function () {
 const cardData = [
   {
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Being left without a map on a hike led me to create a game based on the idea of finding your way from memory. I implemented various game mechanics, such as collision, water current, timer, and map progression. I have only used vanilla JS to create this project and it really pushed my JavaScript skills to a new level as I figured my way through it.',
     link: 'https://oskarprzybylski23.github.io/Hiking-Game/',
     imageSrc: 'assets/hikingGame.PNG',
     heading: 'Hiking Game',
   },
   {
     content:
-      'Quake Finder is a web app designed to empower users to explore historical earthquake data from around the world. With Quake Finder, users can delve into seismic events and understand their impact.',
+      'Quake Finder is a web app designed to empower users to explore historical earthquake data from around the world. With Quake Finder, users can delve into seismic events and understand their impact. This project focused on practicing API integration, utilising asynchronous JavaScript and interacting with fetched data',
     link: 'https://fac29a.github.io/Oskar-Zukhra-Project/',
     imageSrc: 'assets/QuakeFinder.PNG',
     heading: 'Quake Finder',
   },
   {
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'This simple task manager has been mainly created as a practice for test-driven-development. The task manager functionalties include creating new subgroups and adding and moving tasks. All features have been thoroughly tested, utilising end-to-end testing methods',
     link: 'https://fac29a.github.io/oskar-alex/',
     imageSrc: 'assets/taskManager.png',
     heading: 'Task Manager',
   },
   {
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Project I am currently working on. It integrates Spotify and Discogs APIs to create playlist based on Discogs record library. It will allow users to tranfer their record collections to Spotify and listen to them on them anywhere. I am using python for the backend and it is a perfect practice for using OAuth protocol',
     link: 'https://github.com/oskarprzybylski23/Discogs-Spotify-Playlist-Creator',
     imageSrc: 'assets/discofy.jpeg',
     heading: 'Discofy (WiP)',
