@@ -375,6 +375,8 @@ ul {
 }
 
 .transparent-button {
+  font-family: var(--font-main);
+  font-weight: bold;
   background: none;
   border: none;
   padding: 0;
