@@ -80,6 +80,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Button to move to the second section
+const skipButton = document.querySelector('#skip-button');
+const aboutSection = document.querySelector('#about');
+
+skipButton.addEventListener('click', function () {
+  aboutSection.scrollIntoView({ behavior: 'smooth' });
+});
+
 // ---- GENERATING CARDS -----
 // data for the cards
 const cardData = [
@@ -107,9 +115,9 @@ const cardData = [
   {
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    link: 'https://oskarprzybylski23.github.io/Hiking-Game/',
-    imageSrc: 'assets/hikingGame.PNG',
-    heading: 'Hiking Game',
+    link: 'https://github.com/oskarprzybylski23/Discogs-Spotify-Playlist-Creator',
+    imageSrc: 'assets/discofy.jpeg',
+    heading: 'Discofy (WiP)',
   },
 ];
 
@@ -138,11 +146,3 @@ function createCard(card) {
 
 // Loop through the card data and create cards
 cardData.forEach(createCard);
-
-// Button to move to the second section
-const skipButton = document.querySelector('#skip-button');
-const aboutSection = document.querySelector('#about');
-
-skipButton.addEventListener('click', function () {
-  aboutSection.scrollIntoView({ behavior: 'smooth' });
-});
