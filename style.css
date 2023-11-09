@@ -95,7 +95,7 @@ ul {
 }
 
 .three {
-  background-image: url('../assets/Background.jpg');
+  background-image: url('../Portfolio-Website/assets/Background.jpg');
   display: grid;
   grid-template-columns: 30rem 1fr 2fr 1fr 5rem;
   grid-template-rows: 7rem 1fr 1fr 1fr 5rem;
@@ -109,7 +109,7 @@ ul {
 }
 
 .five {
-  background-image: url('../assets/Background.jpg');
+  background-image: url('../Portfolio-Website/assets/Background.jpg');
   display: grid;
   grid-template-columns: 30rem 1fr 1fr 1fr 5rem;
   grid-template-rows: 7rem 1fr 1fr 1fr 1fr 1fr 5rem;
