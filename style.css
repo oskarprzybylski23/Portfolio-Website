@@ -437,6 +437,43 @@ p {
   min-height: 400px;
 }
 
+.git-chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.git-image {
+  margin-top: 20px;
+}
+
+#github-lang {
+  width: 30%;
+}
+
+#github-calendar {
+  width: 80%;
+  padding: 20px;
+   border: 1px solid lightgrey;
+   border-radius: 5px;
+}
+
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 10px;
+  font-size: 18px;
+}
+
+.skills-list li {
+}
+
 /* SECTION THREE */
 
 #three-content-container {
