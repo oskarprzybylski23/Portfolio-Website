@@ -582,6 +582,7 @@ p {
 .project-card:hover {
   background-color: transparent;
   border: dashed 1px var(--accent-dark);
+  
 
   .card-image {
     display: none;
