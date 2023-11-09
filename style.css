@@ -83,7 +83,7 @@ ul {
   display: grid;
   grid-template-columns: 30rem 1fr 35rem 1fr 5rem;
   grid-template-rows: 4.5rem 2fr 5fr 1fr 5rem;
-  background-image: url('../assets/Background.jpg');
+  background-image: url('assets/Background.jpg');
   background-size: cover;
 }
 
@@ -95,7 +95,7 @@ ul {
 }
 
 .three {
-  background-image: url('../assets/Background.jpg');
+  background-image: url('assets/Background.jpg');
   display: grid;
   grid-template-columns: 30rem 1fr 2fr 1fr 5rem;
   grid-template-rows: 7rem 1fr 1fr 1fr 5rem;
@@ -109,7 +109,7 @@ ul {
 }
 
 .five {
-  background-image: url('../assets/Background.jpg');
+  background-image: url('assets/Background.jpg');
   display: grid;
   grid-template-columns: 30rem 1fr 1fr 1fr 5rem;
   grid-template-rows: 7rem 1fr 1fr 1fr 1fr 1fr 5rem;
