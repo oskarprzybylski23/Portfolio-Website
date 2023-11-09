@@ -125,15 +125,14 @@ abbr {
 
 .nav-link {
   color: inherit;
-  transition: color 0.5s;
+  transition: color 0.2s;
 }
 
 .nav-link:active {
   transform: translateY(2px);
 }
 
-.page-link,
-.mail-link {
+.page-link {
   font-family: Josefin Sans;
   font-size: 2rem;
   text-decoration: none;
@@ -722,20 +721,17 @@ label {
   color: var(--font-bright);
 }
 
-.contact-content-1 {
+.contact-content-1, .contact-content-2 {
   width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-start;
+  display: block;
   font-size: 0.6667rem;
+  z-index: 3;
 }
 
-.contact-content-2 {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+
+.contact-content-2 .icon {
+  width: 30px;
+  height: auto;
 }
 
 #footer-quote-container {
@@ -768,7 +764,7 @@ label {
   z-index: 3;
   column-gap: 3rem;
   row-gap: 2rem;
-  display: flex;
+  display: block;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -776,12 +772,15 @@ label {
 }
 
 .contact-links .page-link {
+    display: block;
+    margin-bottom: 10px; /* Optional: Adds some space between the links */
+  
   color: var(--font-bright);
   font-size: 1.5rem;
   font-weight: lighter;
 }
 
-.contact-content-1 .page-link:hover {
+.contact-content-1, .contact-content-2, .page-link:hover {
   color: var(--highlight);
 }
 
