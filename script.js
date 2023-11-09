@@ -1,12 +1,12 @@
 // ---- NAVIGATION BAR BEHAVIOUR ----
 // Script to change navigation bar colours based on page section
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   // Get all the navigation links
-  var navLinks = document.querySelectorAll(".nav-link");
+  var navLinks = document.querySelectorAll('.nav-link');
 
   // Calculate the position of each section on the page
-  var sections = document.querySelectorAll("section");
-  var footer = document.querySelector("footer");
+  var sections = document.querySelectorAll('section');
+  var footer = document.querySelector('footer');
   var sectionPositions = [];
 
   function calculateSectionPositions() {
@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
   calculateSectionPositions(); // Initial calculation of section positions
 
   // Recalculate section positions on window resize
-  window.addEventListener("resize", function () {
+  window.addEventListener('resize', function () {
     calculateSectionPositions();
   });
 
   // Add scroll event listener to track the position
-  window.addEventListener("scroll", function () {
+  window.addEventListener('scroll', function () {
     var currentPosition = window.pageYOffset;
 
     // Reset the color of all navigation links
     navLinks.forEach(function (link) {
-      link.style.color = "";
+      link.style.color = '';
     });
 
     // Check if scroll position is within the footer section
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
           'a[href="#' + currentSection.id + '"]'
         );
         if (currentLink) {
-          currentLink.style.color = "var(--highlight)"; // Set the desired color
+          currentLink.style.color = 'var(--highlight)'; // Set the desired color
         }
       }
 
@@ -61,20 +61,20 @@ document.addEventListener("DOMContentLoaded", function () {
         currentPosition < sectionPositions[3].bottom
       ) {
         navLinks.forEach(function (link) {
-          if (link.style.color !== "var(--highlight)") {
-            link.style.color = "var(--font-dark)"; // Set the desired color
+          if (link.style.color !== 'var(--highlight)') {
+            link.style.color = 'var(--font-dark)'; // Set the desired color
           }
         });
       }
 
       // Show navigation links if they were hidden
       navLinks.forEach(function (link) {
-        link.style.display = "";
+        link.style.display = '';
       });
     } else {
       // Hide navigation links when scrolling over the footer
       navLinks.forEach(function (link) {
-        link.style.display = "none";
+        link.style.display = 'none';
       });
     }
   });
@@ -114,19 +114,19 @@ const cardData = [
 ];
 
 // Get the template element and the container
-const cardTemplate = document.getElementById("card-template");
-const cardContainer = document.getElementById("four-content-container");
+const cardTemplate = document.getElementById('card-template');
+const cardContainer = document.getElementById('four-content-container');
 
 // Function to create and append cards to the container
 function createCard(card) {
   const cardClone = document.importNode(cardTemplate.content, true);
-  const cardContent = cardClone.querySelector(".card-content");
-  const cardLink = cardClone.querySelector(".page-link");
-  const cardImage = cardClone.querySelector(".card-image img");
-  const cardHeading = cardClone.querySelector(".card-heading h3");
+  const cardContent = cardClone.querySelector('.card-content');
+  const cardLink = cardClone.querySelector('.page-link');
+  const cardImage = cardClone.querySelector('.card-image img');
+  const cardHeading = cardClone.querySelector('.card-heading h3');
 
   // Set card data
-  cardContent.querySelector("p").textContent = card.content;
+  cardContent.querySelector('p').textContent = card.content;
   cardLink.href = card.link;
   cardImage.src = card.imageSrc;
   cardImage.alt = card.heading;
@@ -138,3 +138,11 @@ function createCard(card) {
 
 // Loop through the card data and create cards
 cardData.forEach(createCard);
+
+// Button to move to the second section
+const skipButton = document.querySelector('#skip-button');
+const aboutSection = document.querySelector('#about');
+
+skipButton.addEventListener('click', function () {
+  aboutSection.scrollIntoView({ behavior: 'smooth' });
+});

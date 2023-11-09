@@ -81,7 +81,7 @@ ul {
   display: grid;
   grid-template-columns: 30rem 1fr 35rem 1fr 5rem;
   grid-template-rows: 4.5rem 2fr 5fr 1fr 5rem;
-  background-image: url("../assets/Background.jpg");
+  background-image: url('../assets/Background.jpg');
   background-size: cover;
 }
 
@@ -93,7 +93,7 @@ ul {
 }
 
 .three {
-  background-image: url("../assets/Background.jpg");
+  background-image: url('../assets/Background.jpg');
   display: grid;
   grid-template-columns: 30rem 1fr 2fr 1fr 5rem;
   grid-template-rows: 7rem 1fr 1fr 1fr 5rem;
@@ -107,7 +107,7 @@ ul {
 }
 
 .five {
-  background-image: url("../assets/Background.jpg");
+  background-image: url('../assets/Background.jpg');
   display: grid;
   grid-template-columns: 30rem 1fr 1fr 1fr 5rem;
   grid-template-rows: 7rem 1fr 1fr 1fr 1fr 1fr 5rem;
@@ -158,7 +158,7 @@ abbr {
 }
 
 h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 4rem;
   font-weight: bold;
   color: var(--font-bright);
@@ -169,7 +169,7 @@ header h1 {
 }
 
 h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 3rem;
   font-weight: bold;
   color: var(--font-dark);
@@ -177,7 +177,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
@@ -185,7 +185,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 0.5rem;
@@ -194,7 +194,7 @@ h4 {
 }
 
 p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.3rem;
   text-align: justify;
@@ -202,7 +202,7 @@ p {
 }
 
 #header-half {
-  font-family: "Courier New", monospace;
+  font-family: 'Courier New', monospace;
   font-size: 1.9rem;
   font-weight: normal;
   margin-left: 1rem;
@@ -219,7 +219,7 @@ p {
   margin-left: 5rem;
   display: flex;
   justify-content: flex-start;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   min-width: 100px;
 }
 
@@ -359,6 +359,59 @@ p {
   color: var(--font-dark);
   height: auto;
 }
+
+#one-skip-button {
+  grid-column: 3;
+  grid-row: 4 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transparent-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.transparent-button:hover {
+  animation: bounce 0.5s ease-in-out 0s 2 forwards;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.transparent-button:active {
+  animation: paused;
+  transform: scale(0.9); 
+}
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#arrow-down {
+  width: 50px; /* Adjust the arrow width as needed */
+  margin-top: 0.3rem;
+}
+
+
 
 /* SECTION TWO */
 
@@ -607,7 +660,7 @@ fieldset {
   align-items: stretch;
   position: relative;
   width: 100%;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .contact-row:first-of-type {
@@ -616,7 +669,7 @@ fieldset {
 
 input,
 textarea {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   display: block;
   border: 0;
   border-bottom: 1px solid var(--accent-dark);
@@ -721,13 +774,13 @@ label {
   color: var(--font-bright);
 }
 
-.contact-content-1, .contact-content-2 {
+.contact-content-1,
+.contact-content-2 {
   width: 45%;
   display: block;
   font-size: 0.6667rem;
   z-index: 3;
 }
-
 
 .contact-content-2 .icon {
   width: 30px;
@@ -772,15 +825,17 @@ label {
 }
 
 .contact-links .page-link {
-    display: block;
-    margin-bottom: 10px; /* Optional: Adds some space between the links */
-  
+  display: block;
+  margin-bottom: 2rem; /* Optional: Adds some space between the links */
+
   color: var(--font-bright);
   font-size: 1.5rem;
   font-weight: lighter;
 }
 
-.contact-content-1, .contact-content-2, .page-link:hover {
+.contact-content-1,
+.contact-content-2,
+.page-link:hover {
   color: var(--highlight);
 }
 
