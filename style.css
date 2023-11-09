@@ -362,8 +362,13 @@ ul {
   display: flex;
   align-items: center;
   text-align: left;
-  color: var(--font-dark);
   height: auto;
+}
+
+#introduction p{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
 }
 
 #one-skip-button {
@@ -603,17 +608,18 @@ ul {
   flex-direction: column;
   justify-content: space-evenly;
   height: 80%;
-  line-height: 1.5rem;
 }
 
 .card-content .page-link {
   align-self: flex-end;
   margin-top: 5px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .card-content p {
   margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
 }
 
 .card-heading {
