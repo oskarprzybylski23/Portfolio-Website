@@ -946,7 +946,6 @@ label {
   html {
     scroll-snap-type: none;
     font-size: 0.7rem;
-    overflow-y: hidden;
   }
 
   header {
